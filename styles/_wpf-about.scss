@@ -1,0 +1,12 @@
+#wpf-about-wrapper {
+    font-family: "Frutiger";
+    @include header;
+    #wpf-para {
+        margin: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: justify;
+    
+    }
+
+}

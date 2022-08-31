@@ -1,0 +1,118 @@
+.page-wrapper-2 {
+  background: url(../images/pocket_fold_images/pocket_image1.jpg) no-repeat
+    center center fixed;
+  height: 100vh;
+}
+.page-wrapper-1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.05)), url(../images/ranch_images/pleasant_creek_1.jpg) no-repeat
+    center center fixed;
+  height: 100vh;
+}
+
+#night-sky-intro {
+  background: url(../images/night-sky-route-page-img.jpeg) no-repeat center
+    center fixed;
+  height: 100vh;
+}
+
+.page-wrapper-gorge {
+  background-color: black;
+  .route-page {
+    background: url(../images/Wpf_Route_Img.jpg) no-repeat center
+    center fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // .cg-nav-buttons {
+    //   display: flex;
+    //   bottom: 0;
+    //   position: fixed;
+    //   background-color: $black;
+    //   width: 100%;
+
+      a {
+        display: block;
+        font-family: "frutiger";
+        background-color: $white;
+        font-size: 2rem;
+        padding: 1.5rem 3rem 1rem 3rem;
+        border-radius: 15px 15px 15px 15px;
+        margin: 2rem;
+      }
+    }
+  }
+
+
+.route-page {
+  overflow: hidden; /* disable scrollbars */
+  nav {
+    margin: 2rem;
+    font-size: 3rem;
+    font-family: "Frutiger";
+    font-weight: 100;
+    color: lighten($black, 10%);
+    img {
+      max-width: 24px;
+      height: auto;
+    }
+  }
+  .night-back-button {
+    color: $white;
+  }
+  #flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #night-header {
+      color: $white;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $black;
+      align-items: center;
+      text-align: center;
+      max-width: 500px;
+      padding: 2rem;
+      h2 {
+        font-family: "Frutiger";
+        font-weight: 100;
+        font-style: normal;
+        font-size: 2.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.3rem;
+      }
+      h1 {
+        font-family: "Frutiger";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.6rem;
+      }
+    }
+  }
+  #fixed-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .nav-buttons {
+      display: flex;
+      bottom: 0;
+      position: fixed;
+      a {
+        display: block;
+        font-family: "frutiger";
+        background-color: $white;
+        font-size: 2rem;
+        padding: 1.5rem 2rem 1rem 2rem;
+        border-radius: 15px 15px 15px 15px;
+        margin: 2rem;
+      }
+    }
+  }
+}

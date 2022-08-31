@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="6.1.15" start="node10" apprev="18116">
+  <panorama id="node10">
+    <input tilesize="2048" tile2url="images/IMG_8010_1_2_Realistic Panorama_o_2.jpg" levelingpitch="0" tile0url="images/IMG_8010_1_2_Realistic Panorama_o_0.jpg" levelingroll="0" tile3url="images/IMG_8010_1_2_Realistic Panorama_o_3.jpg" tilevrurl="images/IMG_8010_1_2_Realistic Panorama_ovr.jpg" tile1url="images/IMG_8010_1_2_Realistic Panorama_o_1.jpg" tile5url="images/IMG_8010_1_2_Realistic Panorama_o_5.jpg" tilescale="1.004883" tile4url="images/IMG_8010_1_2_Realistic Panorama_o_4.jpg">
+      <preview color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="-81.88" tilt="0.25" projection="4" fov="70"/>
+      <flyin pan="0" tilt="-90" projection="9" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" scaletofit="1" tilt="90" fovstereographic="330" fovfisheye="360" fov="120"/>
+    </view>
+    <userdata heading="0" customnodeid="" description="" nodeid="node10" datetime="3/20/22 12:43 PM" tags="Sleeping Rainbow Ranch 1" source="" info="" author="Derek Balkman" title="" comment="" latitude="" copyright="Derek Balkman" altitude="-3048.00" longitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label background="1" borderradius="1" backgroundalpha="1" borderalpha="1" width="180" border="1" textalpha="1" textcolor="0x000000" height="20" wordwrap="1" enabled="1" backgroundcolor="0xffffff" bordercolor="0x000000"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff"/>
+      <hotspot pan="-82.13" description="" skinid="ht_node" tilt="-4.68" target="" title="Sleeping Rainbow Ranch 2" url="{node11}" id="Point01"/>
+      <hotspot pan="-351.11" description="" skinid="ht_image" tilt="3.56" target="" title="Old Structure" url="images/IMG_9944 copy.jpg" id="Point03"/>
+      <hotspot pan="-13.89" description="" skinid="ht_image" tilt="-0.85" target="" title="Old Structure" url="images/IMG_9945 copy.jpg" id="Point04"/>
+      <hotspot pan="-107.6" description="" skinid="ht_image" tilt="-3.4" target="" title="Old House" url="images/IMG_9946.jpg" id="Point05"/>
+      <hotspot pan="-103.24" description="" skinid="ht_image" tilt="-2.87" target="" title="Run Down Barn" url="images/IMG_9947.jpg" id="Point06"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomspeed="2" blendcolor="0x000000" softedge="0" zoomafterinfov="90" zoomafteroutfov="20" type="crossdissolve" enabled="1" blendtime="1" zoomin="0" zoomfov="20" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control lockedmouse="0" rubberband="0" lockedwheel="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" contextfullscreen="1" sensitivity="8" simulatemass="1" lockedkeyboardzoom="0" dblclickfullscreen="0" invertcontrol="1" contextvr="1" invertwheel="0"/>
+  </panorama>
+  <panorama id="node11">
+    <input tilesize="2048" tile2url="images/IMG_8037_8_9_Realistic Panorama_o_2.jpg" levelingpitch="0" tile0url="images/IMG_8037_8_9_Realistic Panorama_o_0.jpg" levelingroll="0" tile3url="images/IMG_8037_8_9_Realistic Panorama_o_3.jpg" tilevrurl="images/IMG_8037_8_9_Realistic Panorama_ovr.jpg" tile1url="images/IMG_8037_8_9_Realistic Panorama_o_1.jpg" tile5url="images/IMG_8037_8_9_Realistic Panorama_o_5.jpg" tilescale="1.004883" tile4url="images/IMG_8037_8_9_Realistic Panorama_o_4.jpg">
+      <preview color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" tilt="0" projection="4" fov="70"/>
+      <flyin pan="0" tilt="-90" projection="9" fov="170"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" scaletofit="1" tilt="90" fovstereographic="270" fovfisheye="360" fov="120"/>
+    </view>
+    <userdata heading="0" customnodeid="" description="" nodeid="node11" datetime="3/20/22 12:48 PM" tags="Sleeping Rainbow Ranch 2" source="" info="" author="Derek Balkman" title="" comment="" latitude="" copyright="Derek Balkman" altitude="-3048.00" longitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label background="1" borderradius="1" backgroundalpha="1" borderalpha="1" width="180" border="1" textalpha="1" textcolor="0x000000" height="20" wordwrap="1" enabled="1" backgroundcolor="0xffffff" bordercolor="0x000000"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff"/>
+      <hotspot pan="-187.06" description="" skinid="ht_node" tilt="-1.94" target="" title="Sleeping Rainbow Ranch 1" url="{node10}" id="Point01"/>
+      <hotspot pan="-200.69" description="" skinid="ht_image" tilt="0.06" target="" title="Old Shed" url="images/IMG_9951 copy.jpg" id="Point04"/>
+      <hotspot pan="-339.38" description="" skinid="ht_image" tilt="-3" target="" title="Rusted Farm Equipment 1" url="images/IMG_9923 copy.jpg" id="Point06"/>
+      <hotspot pan="-345.27" description="" skinid="ht_image" tilt="-3" target="" title="Rusted Farm Equipment 2" url="images/IMG_9918.jpg" id="Point07"/>
+      <hotspot pan="-80.4" description="" skinid="ht_image" tilt="-1.02" target="" title="Areas Rest Room" url="images/IMG_9917.jpg" id="Point08"/>
+      <hotspot pan="-351.34" description="" skinid="ht_image" tilt="-3" target="" title="Rusted Refrigerator" url="images/IMG_9920.jpg" id="Point09"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomspeed="2" blendcolor="0x000000" softedge="0" zoomafterinfov="90" zoomafteroutfov="20" type="crossdissolve" enabled="1" blendtime="1" zoomin="0" zoomfov="20" zoomoutpause="1"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control lockedmouse="0" rubberband="0" lockedwheel="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" contextfullscreen="1" sensitivity="8" simulatemass="1" lockedkeyboardzoom="0" dblclickfullscreen="0" invertcontrol="1" contextvr="1" invertwheel="0"/>
+  </panorama>
+  <masternode>
+    <userdata heading="0" customnodeid="" description="" nodeid="master" datetime="" tags="" source="" info="" author="" title="" comment="" latitude="" copyright="" longitude=""/>
+  </masternode>
+</tour>

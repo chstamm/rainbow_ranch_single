@@ -1,0 +1,70 @@
+.timeline-wrapper {
+  @include header;
+  text-align: center;
+  background-color: #bfd3bc;
+  padding-top: 3rem;
+  border-radius: 30px 30px 0px 0px;
+  h1 {
+    font-family: "Frutiger";
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+  }
+  #content-div {
+    margin-top: 1.5rem;
+    font-family: "Frutiger";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      font-family: "Frutiger";
+      font-weight: 400;
+      color: $white;
+      border-radius: 10px;
+      background-color: $black;
+      box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2)
+    }
+    .collapsible {
+      padding: 1.8rem;
+      width: 90%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.5rem;
+    }
+    .collapsible:after {
+      content: "\02795"; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: white;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+    .content {
+      background-color:rgba(255, 255, 255, 0.6);
+      color: $black;
+      margin: 2rem;
+      max-width: 400px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      text-align: justify;
+      text-justify: inter-word;
+      
+      h2 {
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+      }
+      p {
+        padding: 1rem;
+        line-height: 1.7rem;
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

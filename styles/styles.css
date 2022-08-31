@@ -1,0 +1,1056 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-Roman.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-Roman.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-Roman.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-Roman.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-Roman.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-Italic.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-Italic.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-Italic.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-Italic.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-Italic.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-Bold.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-Bold.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-Bold.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-Bold.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-BoldItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-BoldItalic.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-BoldItalic.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-BoldItalic.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-BoldItalic.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-Light.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-Light.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-Light.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-Light.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-LightItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-LightItalic.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-LightItalic.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-LightItalic.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-LightItalic.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-Black.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-Black.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-Black.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-Black.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url("fonts/Frutiger/FrutigerLTStd-UltraBlack.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Frutiger/FrutigerLTStd-UltraBlack.woff2") format("woff2"), url("fonts/Frutiger/FrutigerLTStd-UltraBlack.woff") format("woff"), url("fonts/Frutiger/FrutigerLTStd-UltraBlack.ttf") format("truetype"), url("fonts/Frutiger/FrutigerLTStd-UltraBlack.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 1000;
+  font-style: normal;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1080px;
+  margin: auto;
+}
+
+#home-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(../images/Hero_Img_Main_Page.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/Hero_Img_Main_Page.jpg) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  color: #F5F5F5;
+}
+
+#home-header .scrim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#home-header .scrim h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+#home-header .scrim h1 {
+  font-family: "Frutiger";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+#home-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#home-nav .nav-tile {
+  max-width: 500px;
+  margin: 0rem 2rem 2rem 2rem;
+}
+
+#home-nav .nav-tile h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.page-wrapper-2 {
+  background: url(../images/pocket_fold_images/pocket_image1.jpg) no-repeat center center fixed;
+  height: 100vh;
+}
+
+.page-wrapper-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.05))), url(../images/ranch_images/pleasant_creek_1.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.05)), url(../images/ranch_images/pleasant_creek_1.jpg) no-repeat center center fixed;
+  height: 100vh;
+}
+
+#night-sky-intro {
+  background: url(../images/night-sky-route-page-img.jpeg) no-repeat center center fixed;
+  height: 100vh;
+}
+
+.page-wrapper-gorge {
+  background-color: black;
+}
+
+.page-wrapper-gorge .route-page {
+  background: url(../images/Wpf_Route_Img.jpg) no-repeat center center fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-wrapper-gorge .route-page a {
+  display: block;
+  font-family: "frutiger";
+  background-color: #F5F5F5;
+  font-size: 2rem;
+  padding: 1.5rem 3rem 1rem 3rem;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2rem;
+}
+
+.route-page {
+  overflow: hidden;
+  /* disable scrollbars */
+}
+
+.route-page nav {
+  margin: 2rem;
+  font-size: 3rem;
+  font-family: "Frutiger";
+  font-weight: 100;
+  color: #383535;
+}
+
+.route-page nav img {
+  max-width: 24px;
+  height: auto;
+}
+
+.route-page .night-back-button {
+  color: #F5F5F5;
+}
+
+.route-page #flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.route-page #flex-wrapper #night-header {
+  color: #F5F5F5;
+}
+
+.route-page #flex-wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1e1c1c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.route-page #flex-wrapper header h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.route-page #flex-wrapper header h1 {
+  font-family: "Frutiger";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.6rem;
+}
+
+.route-page #fixed-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.route-page #fixed-wrapper .nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  position: fixed;
+}
+
+.route-page #fixed-wrapper .nav-buttons a {
+  display: block;
+  font-family: "frutiger";
+  background-color: #F5F5F5;
+  font-size: 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2rem;
+}
+
+#night-sky-page-wrapper {
+  background-color: #1e1c1c;
+  color: #F5F5F5;
+  font-family: "Frutiger";
+  height: 100vh;
+}
+
+#night-sky-page-wrapper header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#night-sky-page-wrapper header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#night-sky-page-wrapper header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#night-sky-page-wrapper header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#night-sky-page-wrapper header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#night-sky-page-wrapper #night-tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1e1c1c;
+}
+
+#night-sky-page-wrapper #night-tiles .night-tile {
+  margin: 2rem;
+  text-align: center;
+}
+
+#night-sky-page-wrapper #night-tiles .night-tile h2 {
+  font-size: 1.8rem;
+  font-family: "Frutiger";
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+
+#night-sky-page-wrapper #night-tiles .night-tile img {
+  max-width: 150px;
+}
+
+#tour-wrapper header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#tour-wrapper header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#tour-wrapper header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#tour-wrapper header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#tour-wrapper header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#VR-tour-header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+#VR-tour-header #link {
+  font-size: 3rem;
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#VR-tour-header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#VR-tour-header #title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#VR-tour-header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#fixed-wrapper-vr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#fixed-wrapper-vr .nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fixed-wrapper-vr .nav-buttons a {
+  display: block;
+  font-family: "frutiger";
+  background-color: #F5F5F5;
+  color: #1e1c1c;
+  font-size: 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2rem;
+}
+
+#wpf-about-wrapper {
+  font-family: "Frutiger";
+}
+
+#wpf-about-wrapper header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#wpf-about-wrapper header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#wpf-about-wrapper header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#wpf-about-wrapper header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#wpf-about-wrapper header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#wpf-about-wrapper #wpf-para {
+  margin: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+#night-info-wrapper {
+  background-color: #1e1c1c;
+  color: #F5F5F5;
+  height: 100vh;
+}
+
+#night-info-wrapper header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#night-info-wrapper header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#night-info-wrapper header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#night-info-wrapper header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#night-info-wrapper header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#night-info-wrapper #images {
+  background-color: #1e1c1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#night-info-wrapper #images figure {
+  max-width: 350px;
+  margin: 1rem;
+}
+
+#night-info-wrapper #para {
+  background-color: #1e1c1c;
+  font-family: "Frutiger";
+  padding-bottom: 1.5rem;
+}
+
+#night-info-wrapper #para h2 {
+  font-size: 2.4rem;
+  font-family: "Frutiger";
+  font-size: 100;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#night-info-wrapper #para p {
+  margin: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+.back_button {
+  font-family: "Frutiger";
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+#oops {
+  margin-top: 5rem;
+  font-family: "Frutiger";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#oops h1 {
+  font-size: 10rem;
+}
+
+#oops h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+  font-size: 3.6rem;
+  margin: 2rem;
+}
+
+#oops img {
+  max-width: 400px;
+}
+
+.timeline-wrapper {
+  text-align: center;
+  background-color: #bfd3bc;
+  padding-top: 3rem;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.timeline-wrapper header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+.timeline-wrapper header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+.timeline-wrapper header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+.timeline-wrapper header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.timeline-wrapper header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+.timeline-wrapper h1 {
+  font-family: "Frutiger";
+  font-weight: 400;
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.timeline-wrapper #content-div {
+  margin-top: 1.5rem;
+  font-family: "Frutiger";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timeline-wrapper #content-div button {
+  font-family: "Frutiger";
+  font-weight: 400;
+  color: #F5F5F5;
+  border-radius: 10px;
+  background-color: #1e1c1c;
+  -webkit-box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-wrapper #content-div .collapsible {
+  padding: 1.8rem;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.timeline-wrapper #content-div .collapsible:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.timeline-wrapper #content-div .active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.timeline-wrapper #content-div .content {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #1e1c1c;
+  margin: 2rem;
+  max-width: 400px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.timeline-wrapper #content-div .content h2 {
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.timeline-wrapper #content-div .content p {
+  padding: 1rem;
+  line-height: 1.7rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+#vid-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#vid-wrapper .contentContainer {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 5rem;
+}
+
+#vid-wrapper .contentContainer header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#vid-wrapper .contentContainer header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#vid-wrapper .contentContainer header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#vid-wrapper .contentContainer header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#vid-wrapper .contentContainer header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#vid-wrapper .contentContainer .modelViewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem;
+}
+
+#vid-wrapper .contentContainer .modelViewer iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vid-wrapper .contentContainer .modelViewer video {
+  width: 100%;
+  height: auto;
+}
+
+#vid-wrapper .contentContainer .textContainer {
+  margin: 0.5rem 0 0 0;
+}
+
+#vid-wrapper .contentContainer .textContainer .body {
+  margin: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  #vid-wrapper model-viewer {
+    height: 350px;
+  }
+}
+
+#AR-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#AR-wrapper .contentContainer {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 120px;
+}
+
+#AR-wrapper .contentContainer header {
+  color: #F5F5F5;
+  background-color: #1e1c1c;
+  height: 70px;
+  padding-top: 2.5rem;
+}
+
+#AR-wrapper .contentContainer header #link {
+  padding-left: 2rem;
+  position: absolute;
+}
+
+#AR-wrapper .contentContainer header #link a img {
+  max-width: 24px;
+  height: auto;
+}
+
+#AR-wrapper .contentContainer header #title {
+  font-size: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+#AR-wrapper .contentContainer header #title h2 {
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#AR-wrapper .contentContainer model-viewer {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#AR-wrapper .contentContainer .modelViewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem;
+}
+
+#AR-wrapper .contentContainer .modelViewer button.arButton {
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  border-radius: 4px;
+  background-color: #f6b24d;
+}
+
+#AR-wrapper .contentContainer .modelViewer div.arButton {
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AR-wrapper .contentContainer .modelViewer div.arButton p {
+  font-family: "Frutiger";
+  margin: 0.1rem 0.2rem 0.2rem 0.2rem;
+}
+
+#AR-wrapper .contentContainer .textContainer {
+  margin: 0.5rem 0 0 0;
+}
+
+#AR-wrapper .contentContainer .textContainer h3 {
+  font-family: "Frutiger";
+  font-weight: 400;
+  margin: 1.5rem;
+  font-size: 2.4rem;
+}
+
+#AR-wrapper .contentContainer .textContainer .body {
+  margin: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-family: "Frutiger";
+  font-weight: 100;
+}
+
+#AR-wrapper .contentContainer .textContainer .caption {
+  margin: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  font-family: "Frutiger";
+  font-weight: 600;
+}
+
+#AR-wrapper .contentContainer .textContainer .caption a {
+  color: #f6b24d;
+}
+
+#AR-wrapper .contentContainer .navigationButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#AR-wrapper .contentContainer .navigationButtons .navigationButton {
+  border: solid 2px #4d91f6;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4d91f6;
+}
+
+#AR-wrapper .contentContainer .navigationButtons p {
+  font-family: "Frutiger";
+  font-weight: 600;
+  padding-top: .15rem;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+/*# sourceMappingURL=styles.css.map */

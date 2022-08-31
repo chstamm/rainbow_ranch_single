@@ -1,0 +1,11 @@
+// Make work with widths 320px and 500px for mobile. May need to deail with px density. May make desktop versions just in case.
+
+body {
+    display: flex;
+	flex-direction: column;
+	max-width: 1080px;
+	margin: auto;
+}
+
+$white: #F5F5F5;
+$black: #1e1c1c;
